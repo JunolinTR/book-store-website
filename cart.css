@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .section-p1 {
+    padding: 40px 80px;
+  }
+#header{
+    background-color:#14d6c3;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 2px 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+  }#header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+}
+#header .logo i{
+    color:black;
+}
+  #navbar{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+  #navbar li{
+    list-style: none;
+    padding: 0 15px;
+    position:relative;
+  }
+  #navbar li a{
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 600;
+    color:black;
+    transition: background 0.3s;
+  }
+  #navbar li a:hover,
+  #navbar li a.active{
+     background:white;
+  }
+  #navbar li a.active::after,
+  #navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:white;
+    position:absolute;
+    bottom: -4px;
+    left:20px;
+  }
+  .cart-page{
+    margin:80px 200px;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse; 
+  }
+  .cart-info{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cart-info img{
+    width:20%;
+  }
+  th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: grey;
+    font-weight: normal;
+  }
+  td{
+    padding: 10px 5px;
+  }
+  td input{
+    width:40px;
+    height:30px;
+    padding: 5px;
+  }
+  td a{
+    color: #ff523b;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  td img{
+  
+    margin-right: 10px;
+  }
+
+  footer{
+    
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .col{
+    padding-left: 60px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }  
+  footer.logo{
+    margin-bottom:30px;
+  }
+  footer h4{
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  footer p{
+    color: #222;
+    font-size: 13px;
+  }
+  footer a{
+    font-size: 10px;
+    text-decoration: none;
+    color:black;
+    margin-bottom: 10px;
+  }
+  footer .follow{
+    margin-top: 20px;
+  }
+  footer .follow i{
+    color:black;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+  footer .install .row img{
+    border:1px solid black;
+    border-radius: 6px;
+  }
+  footer .install img{
+    margin:10px 0 15px 0;
+  }
+  footer .follow i:hover,
+  footer a:hover{
+    color:#088178;
+  }
+.checkout {
+  color:white;
+  background-color: #14d6c3;
+  width:fit-content;
+  height: auto;
+  font-size: 2rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.checkout :hover{
+  color: #222;
+}
